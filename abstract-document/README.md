@@ -10,17 +10,17 @@ tags:
 ---
 
 ## Intent
-Achieve flexibility of untyped languages and keep the type-safety 
+实现了非类型语言的灵活性保住了语言的安全 
 
 ![alt text](./etc/abstract-document.png "Abstract Document Traits and Domain")
 
 
-## Applicability
-Use the Abstract Document Pattern when
+## 适应的情况
+什么时候去使用抽象文档设计模式？
 
-* there is a need to add new properties on the fly
-* you want a flexible way to organize domain in tree like structure
-* you want more loosely coupled system
+* 需要动态的添加新的属性
+* 你需要一种灵活的反思
+* 让系统的耦合性更低
 
 
 ## Credits

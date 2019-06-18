@@ -54,22 +54,28 @@ public class App {
   public App() {
     LOGGER.info("Constructing parts and car");
 
+    //汽车的属性 model price
     Map<String, Object> carProperties = new HashMap<>();
     carProperties.put(HasModel.PROPERTY, "300SL");
     carProperties.put(HasPrice.PROPERTY, 10000L);
 
+    //方向盘的属性
     Map<String, Object> wheelProperties = new HashMap<>();
     wheelProperties.put(HasType.PROPERTY, "wheel");
     wheelProperties.put(HasModel.PROPERTY, "15C");
     wheelProperties.put(HasPrice.PROPERTY, 100L);
 
+    //车门的属性
     Map<String, Object> doorProperties = new HashMap<>();
     doorProperties.put(HasType.PROPERTY, "door");
     doorProperties.put(HasModel.PROPERTY, "Lambo");
     doorProperties.put(HasPrice.PROPERTY, 300L);
 
+    //Arrays.asList(wheelProperties, doorProperties) 把两个属性转换成list
+    //车的属性中组成部分是门和方向盘
     carProperties.put(HasParts.PROPERTY, Arrays.asList(wheelProperties, doorProperties));
 
+    //组成汽车
     Car car = new Car(carProperties);
 
     LOGGER.info("Here is our car:");
