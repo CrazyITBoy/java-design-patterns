@@ -14,21 +14,20 @@ tags:
 Kit
 
 ## Intent
-Provide an interface for creating families of related or dependent
-objects without specifying their concrete classes.
+提供用于创建相关或从属对象族的接口，而无需指定其具体类。
 
 ## Explanation
-Real world example
+实际案例
 
-> To create a kingdom we need objects with common theme. Elven kingdom needs an Elven king, Elven castle and Elven army whereas Orcish kingdom needs an Orcish king, Orcish castle and Orcish army. There is a dependency between the objects in the kingdom.
+> 为了创建精灵的王国我们需要共同的东西。精灵王国需要一个精灵王，精灵城堡和精灵军队，而兽人王国需要一个兽人王，兽人城堡和兽人军队。王国中的对象存在着依赖关系。
 
-In plain words
+简单来说
 
-> A factory of factories; a factory that groups the individual but related/dependent factories together without specifying their concrete classes.
+> 工厂的工厂;将单独但相关/依赖的工厂分组在一起而不指定具体的类别的工厂。
 
-Wikipedia says
+维基百科的说法
 
-> The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes
+> 抽象工厂设计模式提供了一种方法用来封装一组具有共同主题的工厂，而不指定他们的具体工厂类
 
 **Programmatic Example**
 
